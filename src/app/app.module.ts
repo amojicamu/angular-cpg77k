@@ -23,6 +23,7 @@ import { AngularMaterialModule } from '../angular-material/angular-material.modu
     AngularMaterialModule
   ],
   declarations: [ AppComponent, HelloComponent, DialogComponent ],
-  bootstrap:    [ AppComponent ]
+  bootstrap:    [ AppComponent ],
+  entryComponents: [ DialogComponent ]
 })
 export class AppModule { }

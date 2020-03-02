@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
+import { MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
+import { DialogComponent } from './dialog.component';
 
 @Component({
   selector: 'my-app',
@@ -12,6 +13,6 @@ export class AppComponent  {
   constructor(public dialog: MatDialog) {}
 
   public onClick() {
-    window.alert('click');
+    const dialogRef = this.dialog.open(DialogComponent);
   }
 }
