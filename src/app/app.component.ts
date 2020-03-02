@@ -19,8 +19,7 @@ export class AppComponent  {
     this.router.navigate([{outlets: {details: target}}]);
 
     const dialogRef = this.dialog.open(DialogComponent, {
-      width: '250px',
-      height: '250px'
+      width: '250px'
     });
   }
 }
