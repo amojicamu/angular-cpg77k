@@ -1,10 +1,15 @@
-import { Component, Input } from '@angular/core';
+import { Component, Output, Input, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'hello',
-  template: `<a mat-raised-button [routerLink]="['', { outlets: { modal: ['login'] } }]">Open Dialog</a>`,
+  template: `<button mat-raised-button color="primary" (click)="onClick()">Open Dialog</button>`,
   styles: [`h1 { font-family: Lato; }`]
 })
 export class HelloComponent  {
-  @Input() name: string;
+  @Output()
+  public selectCriteria = new EventEmitter<boolean>();
+
+  onClick() {
+    this.selectCriteria.emit();
+  }
 }
