@@ -10,4 +10,8 @@ export class AppComponent  {
   name = 'Angular';
 
   constructor(public dialog: MatDialog) {}
+
+  public onClick() {
+    window.alert('click');
+  }
 }
