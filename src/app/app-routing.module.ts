@@ -9,7 +9,6 @@ const routes: Routes = [
   { path: 'hello', component: HelloComponent },
   {
     path: 'modals',
-    component: DialogContentComponent,
     outlet: 'modal',
     children: [
           {
