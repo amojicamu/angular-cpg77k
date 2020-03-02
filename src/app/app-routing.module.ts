@@ -9,7 +9,7 @@ const routes: Routes = [
   { path: 'dashboard', component: HelloComponent },
   {
     path: 'dialog',
-    outlet: 'modal',
+    outlet: 'details',
     children: [
           {
             path: 'default',

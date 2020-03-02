@@ -16,7 +16,7 @@ export class AppComponent  {
     private router : Router) {}
 
   public onClick(target: string) {
-    this.router.navigate([{outlets: {modal: target}}]);
+    this.router.navigate([{outlets: {details: target}}]);
 
     const dialogRef = this.dialog.open(DialogComponent, {
       width: '250px',
