@@ -4,7 +4,7 @@ import { HelloComponent } from './hello.component';
 
 const routes: Routes = [
   { path: '', component: HelloComponent, pathMatch: 'full' },
-  { path: '**', component: HelloComponent, pathMatch: 'full' },
+  { path: 'hello', component: HelloComponent },
   {
     path: 'login',
     component: HelloComponent,
