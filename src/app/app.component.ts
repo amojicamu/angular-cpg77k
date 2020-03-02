@@ -13,6 +13,9 @@ export class AppComponent  {
   constructor(public dialog: MatDialog) {}
 
   public onClick() {
-    const dialogRef = this.dialog.open(DialogComponent);
+    const dialogRef = this.dialog.open(DialogComponent, {
+      width: '250px',
+      height: '250px'
+    });
   }
 }
