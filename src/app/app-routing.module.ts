@@ -5,8 +5,8 @@ import { DialogContentComponent } from './dialog-content.component';
 import { OptionsDialogComponent } from './option-dialog.component'
 
 const routes: Routes = [
-  { path: '', redirectTo: '/hello', pathMatch: 'full' },
-  { path: 'hello', component: HelloComponent },
+  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+  { path: 'dashboard', component: HelloComponent },
   {
     path: 'modals',
     outlet: 'modal',
