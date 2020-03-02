@@ -3,10 +3,10 @@ import { Component, Output, Input, EventEmitter } from '@angular/core';
 @Component({
   selector: 'hello',
   template: `
-    <button mat-raised-button color="primary" (click)="onClick('default')">Open Default</button>
+    <button mat-raised-button color="primary" (click)="onClick('modals/default')">Open Default</button>
     <br />
     <br />
-    <button mat-raised-button color="primary" (click)="onClick('options')">Open Options</button>
+    <button mat-raised-button color="primary" (click)="onClick('modals/options')">Open Options</button>
     <br />
     `,
   styles: [`h1 { font-family: Lato; }`]

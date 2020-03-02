@@ -8,14 +8,19 @@ const routes: Routes = [
   { path: '', redirectTo: '/hello', pathMatch: 'full' },
   { path: 'hello', component: HelloComponent },
   {
-    path: 'default',
+    path: 'modals',
     component: DialogContentComponent,
-    outlet: 'modal'
-  },
-  {
-    path: 'options',
-    component: OptionsDialogComponent,
-    outlet: 'modal'
+    outlet: 'modal',
+    children: [
+          {
+            path: 'default',
+            component: DialogContentComponent
+          },
+          {
+            path: 'options',
+            component: OptionsDialogComponent
+          }
+        ]
   }
 ];
 
