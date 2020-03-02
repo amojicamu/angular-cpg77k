@@ -7,9 +7,9 @@ import { Component, Output, Input, EventEmitter } from '@angular/core';
 })
 export class HelloComponent  {
   @Output()
-  public selectCriteria = new EventEmitter<boolean>();
+  public clicked = new EventEmitter<boolean>();
 
   onClick() {
-    this.selectCriteria.emit();
+    this.clicked.emit();
   }
 }
