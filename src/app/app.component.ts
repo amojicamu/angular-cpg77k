@@ -15,8 +15,8 @@ export class AppComponent  {
     public dialog: MatDialog,
     private router : Router) {}
 
-  public onClick() {
-    this.router.navigate([{outlets: {modal: 'default'}}]);
+  public onClick(target: string) {
+    this.router.navigate([{outlets: {modal: target}}]);
 
     const dialogRef = this.dialog.open(DialogComponent, {
       width: '250px',
