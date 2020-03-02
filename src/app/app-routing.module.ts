@@ -8,7 +8,7 @@ const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   { path: 'dashboard', component: HelloComponent },
   {
-    path: 'modals',
+    path: 'dialog',
     outlet: 'modal',
     children: [
           {
