@@ -2,8 +2,8 @@ import { Component, Output, Input, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-dialog-content',
-  template: `<p> This is a standard dialog <p>`,
+  template: `<p> Options go here <p>`,
   styles: []
 })
-export class DialogContentComponent  {
+export class OptionsDialogComponent  {
 }
