@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
 import { DialogComponent } from './dialog.component';
 
@@ -10,9 +11,13 @@ import { DialogComponent } from './dialog.component';
 export class AppComponent  {
   name = 'Angular';
 
-  constructor(public dialog: MatDialog) {}
+  constructor(
+    public dialog: MatDialog,
+    private router : Router) {}
 
   public onClick() {
+    this.router.navigate([{outlets: {modal: 'login'}}]);
+
     const dialogRef = this.dialog.open(DialogComponent, {
       width: '250px',
       height: '250px'

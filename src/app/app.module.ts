@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { DialogComponent } from './dialog.component';
+import { DialogContentComponent } from './dialog-content.component';
 
 import { routing } from './app-routing.module';
 
@@ -22,7 +23,7 @@ import { AngularMaterialModule } from '../angular-material/angular-material.modu
      // Import of the angular-material angular module
     AngularMaterialModule
   ],
-  declarations: [ AppComponent, HelloComponent, DialogComponent ],
+  declarations: [ AppComponent, HelloComponent, DialogComponent, DialogContentComponent ],
   bootstrap:    [ AppComponent ],
   entryComponents: [ DialogComponent ]
 })
