@@ -9,9 +9,10 @@ import {
   MatButtonModule,
   MatInputModule,
   MatCardModule,
-  MatToolbarModule,
-  MatDialogModule,
+  MatToolbarModule
 } from '@angular/material';
+
+import {MatDialogModule} from '@angular/material/dialog';
 
 @NgModule({
   imports: [
