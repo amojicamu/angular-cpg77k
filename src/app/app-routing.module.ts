@@ -5,6 +5,11 @@ import { HelloComponent } from './hello.component';
 const routes: Routes = [
   { path: '', component: HelloComponent, pathMatch: 'full' },
   { path: '**', component: HelloComponent, pathMatch: 'full' },
+  {
+    path: 'login',
+    component: HelloComponent,
+    outlet: 'modal'
+  }
 ];
 
 const appRoutes: Routes = [
