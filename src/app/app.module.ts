@@ -5,6 +5,8 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 
+import { routing } from './app-routing.module';
+
 // Import of the angular-material angular module
 import { AngularMaterialModule } from '../angular-material/angular-material.module';
 
@@ -12,6 +14,9 @@ import { AngularMaterialModule } from '../angular-material/angular-material.modu
   imports:      [ 
     BrowserModule, 
     FormsModule,
+
+    // Add routing
+    routing,
 
      // Import of the angular-material angular module
     AngularMaterialModule
